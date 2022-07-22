@@ -1,0 +1,41 @@
+#bottomBox{
+    border: 1px solid grey;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#bottomBox>div{
+    border: 3px solid blue;
+    width:85%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(65, 119, 236);
+}
+p{
+    color: grey;
+}
+#copyrigth{
+    text-align: center;
+}
+.fa-solid{
+    color: blue;
+}
+#bottomBox>div>:first-child{
+    margin-left: 5px;
+}
+#bottomBox>div>:last-child{
+    margin-right: 5px;
+    font-size: 30px;
+}
+#vpn,#Restarunt,#Sonic,button{
+    cursor: pointer;
+}
