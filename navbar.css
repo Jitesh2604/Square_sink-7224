@@ -1,0 +1,29 @@
+#topBox{
+    background-color: #1ADBDA;
+    padding-bottom: 10px;
+}
+img{
+    height: 80px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+h1{
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    margin-top: -20px;
+    text-align: center;
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin-left: 43%;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    background-color: black;
+}
