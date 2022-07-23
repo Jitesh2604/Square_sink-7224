@@ -1,0 +1,87 @@
+*{
+    background-color: grey;
+}
+h1,h2,h3,h4,p{
+    background-color: white;
+}
+#cart{
+    background-color: white;
+    width: 30%;
+    padding: 10px 15px;
+    margin: auto;
+}
+hr{
+    width: 95%;
+}
+#item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#item>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+#item>div:nth-child(1){
+    background-color: white;
+}
+#item>div:nth-child(2)>h3{
+    margin-top: 10px;
+    font-size: 25px;
+    color: teal;
+}
+#display{
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: white;
+}
+#display>div{
+    width: 40%;
+    text-align: end;
+    margin-left: 50%;
+    padding: 10px;
+    background-color: white;
+}
+#display>div>h2{
+    color: teal;
+    margin-bottom: -10px;
+}
+#display>div>p{
+    font-weight: bold;
+}
+#display>div>i{
+    color: rgb(61, 60, 60);
+}
+#cart>div:nth-child(5){
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+}
+i{
+    background-color: white;
+}
+#cart>div:nth-child(5)>p{
+    background-color: black;
+}
+#cart>div:nth-child(5)>p>i{
+    background-color: black;
+    margin-right: 5px;
+}
+#cart>div:nth-child(6){
+    margin: auto;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    margin-top: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
