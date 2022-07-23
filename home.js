@@ -18,5 +18,5 @@ document.querySelector("#vpn").addEventListener("click",vpnFunc);
     document.querySelector("button").addEventListener("click",cartFunc);
 
     function cartFunc(){
-        window.location.href="addToCartPage.html";
+        window.location.href="domain.html";
     };
