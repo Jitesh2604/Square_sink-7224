@@ -3,7 +3,7 @@ let data=[
                 productName:"foodxprs",
                 bold:".co.in",
                 dicPrice:"$649.00",
-                ogPrice:"$99.00",
+                ogPrice:99.00,
                 text:"for the first year with a 2 year registration",
                 icon:"fa-solid fa-cart-shopping",
                 id:1,
@@ -12,7 +12,7 @@ let data=[
                 productName:"foodxprs",
                 bold:".co",
                 dicPrice:"$2,299.00",
-                ogPrice:"$159.00",
+                ogPrice:159.00,
                 text:"for the first year",
                 icon:"fa-solid fa-cart-shopping",
                 id:2,
@@ -21,7 +21,7 @@ let data=[
                 productName:"foodxprs",
                 bold:".xyz",
                 dicPrice:"$1,199.00",
-                ogPrice:"$159.00",
+                ogPrice:159.00,
                 text:"for the first year",
                 icon:"fa-solid fa-cart-shopping",
                 id:3,
@@ -30,7 +30,7 @@ let data=[
                 productName:"foodxprs",
                 bold:".com",
                 dicPrice:"$1,199.00",
-                ogPrice:"$499.00",
+                ogPrice:499.00,
                 text:"for the first year",
                 icon:"fa-solid fa-cart-shopping",
                 id:4,
@@ -39,14 +39,14 @@ let data=[
                 productName:"foodxprs",
                 bold:".net",
                 dicPrice:"$1,399.00",
-                ogPrice:"  $899.00",
+                ogPrice: 899.00,
                 text:"for the first year with a 2 year registration",
                 icon:"",
                 id:5,
             },
 ];
 
-let dataArr=localStorage.getItem("produuctName")||[];
+let dataArr=JSON.parse(localStorage.getItem("produuctName"))||[];
 
 function display(){
     data.forEach(function(element) {
@@ -83,14 +83,17 @@ function display(){
 display();
 
 function cartFunc(objId){
-    console.log(data);
-
-         for(let i=0;i<data.length;i++){
-            console.log(data[i].id)
-            if(objId==data[i].id){
-    
-
-                localStorage.setItem("productName",JSON.stringify(data[i]));
-            }
+     for(let i=0;i<data.length;i++){
+          if(objId==data[i].id){
+            dataArr.push(data[i])
+           localStorage.setItem("productName",JSON.stringify(dataArr));
          }
+    }
+    data.forEach(function(element){
+         
+    })
 }        
+document.querySelector("p+p+i").addEventListener("click",cartPageFunc);
+function cartPageFunc(){
+    window.location.href="cart.html"
+};
